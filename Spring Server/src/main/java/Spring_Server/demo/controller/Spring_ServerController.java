@@ -9,7 +9,7 @@ public class Spring_ServerController {
 
     @GetMapping("hello")
     public String hello(Model model) {
-        model.addAttribute("data", "gel");
+        model.addAttribute("data", "Yaegun");
         return "index";
     }
 }
