@@ -1,6 +1,5 @@
 package Spring_Server.demo.repository;
 import Spring_Server.demo.domain.Member;
-import Spring_Server.demo.repository.MemberRepository;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import javax.sql.DataSource;
 import java.sql.*;
@@ -28,7 +27,7 @@ public class JdbcMemberRepository implements MemberRepository {
             if (rs.next()) {
                 member.setId(rs.getLong(1));
             } else {
-                throw new SQLException("id find fail");
+                throw new SQLException("id 조회 실패");
             }
             return member;
         } catch (Exception e) {
