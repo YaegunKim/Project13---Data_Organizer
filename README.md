@@ -27,6 +27,5 @@
 |-----|-----|
 |Situation|I had completed implementing some test cases and wanted to commit these changes to my Git repository.|
 |Problem|When attempting to push my changes, Git repeatedly failed, displaying the message: "the tip of your current branch is behind its remote counterpart." This indicated that my local branch was out of sync with the remote repository.|
-|Solution|To resolve this, I first fetched the latest changes from the remote repository using git fetch. Then, I merged these changes into my main branch. After successfully merging and resolving any conflicts, I performed a force push with git push -f origin main, successfully updating the remote repository with my latest changes.|
-
-
+|Temporary Solution|To resolve this, I first fetched the latest changes from the remote repository using git fetch. Then, I merged these changes into my main branch. After successfully merging and resolving any conflicts, I performed a force push with git push -f origin main, successfully updating the remote repository with my latest changes.|
+|Real Solution|After implementing the temporary solution, I noticed that all changes I had made to the README file directly on the GitHub page were lost. I initially thought this was due to pushing the latest fetched changes, so I manually updated the README again after force push. However, the issue recurred upon pushing another change. I then realized that the cause of this problem was the absence of the README commit (made on GitHub) in my local branch. To rectify this, I replicated the README file changes locally and then pushed these changes, ensuring that the remote repository remained consistent with my local repository.|
