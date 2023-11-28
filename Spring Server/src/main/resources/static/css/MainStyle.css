@@ -4,3 +4,9 @@
     font-size: 70px;
     color: blue;
 }
+body {
+    display: flex;
+    background-color: red;
+    font-size: 70px;
+    color: blue;
+}

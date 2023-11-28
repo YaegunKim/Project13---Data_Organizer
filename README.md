@@ -29,3 +29,9 @@
 |Problem|When attempting to push my changes, Git repeatedly failed, displaying the message: "the tip of your current branch is behind its remote counterpart." This indicated that my local branch was out of sync with the remote repository.|
 |Temporary Solution|To resolve this, I first fetched the latest changes from the remote repository using git fetch. Then, I merged these changes into my main branch. After successfully merging and resolving any conflicts, I performed a force push with git push -f origin main, successfully updating the remote repository with my latest changes.|
 |Real Solution|After implementing the temporary solution, I noticed that all changes I had made to the README file directly on the GitHub page were lost. I initially thought this was due to pushing the latest fetched changes, so I manually updated the README again after force push. However, the issue recurred upon pushing another change. I then realized that the cause of this problem was the absence of the README commit (made on GitHub) in my local branch. To rectify this, I replicated the README file changes locally and then pushed these changes, ensuring that the remote repository remained consistent with my local repository.|
+
+|Date| Nov.27.2023(Mon)                                                                                                           |
+|-----|----------------------------------------------------------------------------------------------------------------------------|
+|Situation| I was trying to adjust UI/UX of the home page using html/css.                                                              |
+|Problem| My html file is not importing css file.                                                                                    |
+|Solution| Since I was using thymeleaf templete engine, I changed the link syntax to Thymeleaf syntax th:href="@{/css/MainStyle.css}. |
