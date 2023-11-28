@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Data Organizer</title>
-    <link rel="stylesheet" th:href="@{/css/MainStyle.css}">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Data Organizer</title>
+        <link rel="stylesheet" th:href="@{/css/MainStyle.css}">
+        <script src="https://kit.fontawesome.com/6e285928c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="Left">
+            <div th:insert="view/header :: LeftHeader"></div>
+            <div class="container">
 
-<div class="container">
+                <h1 class="title">Welcome to Data Organizer</h1>
+                <p class="description">Member Function</p>
+                <p>
+                    <a href="/members/new">register</a>
+                    <a href="/members">member list</a>
+                </p>
 
-    <h1 class="title">Welcome to Data Organizer</h1>
-    <p class="description">Member Function</p>
-    <p>
-        <a href="/members/new">register</a>
-        <a href="/members">member list</a>
-    </p>
+            </div>
 
-</div>
+        </section>
+        <section class="Right">
+            <div th:insert="view/header :: RightHeader"></div>
+        </section>
 
-
-</body>
+    </body>
 </html>

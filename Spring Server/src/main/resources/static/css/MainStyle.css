@@ -1,12 +1,39 @@
+/*general*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*sections*/
+section {
+    height: 1000px;
+    float: left;
+}
+section.Left {
+    width: 63%;
+    background-color: #ecf5ff;
+}
+section.Right {
+    width: 37%;
+    background-color: #126dc2;
+}
+
+/*headers*/
+.header {
+    width: 100%; height: 100px;
+    background-color: #082d79;
+}
+.header.Left.logo {
+    align-items: center;
+
+}
+
+
+
+
 .container {
     display: flex;
-    background-color: red;
-    font-size: 70px;
-    color: blue;
-}
-body {
-    display: flex;
-    background-color: red;
+    background-color: purple;
     font-size: 70px;
     color: blue;
 }
