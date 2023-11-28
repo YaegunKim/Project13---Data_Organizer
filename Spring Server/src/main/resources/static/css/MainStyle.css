@@ -22,6 +22,11 @@ section.Right {
 .header {
     width: 100%; height: 100px;
     background-color: #082d79;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /**justify-content: center;*/
 }
 .header.Left.logo {
     align-items: center;
