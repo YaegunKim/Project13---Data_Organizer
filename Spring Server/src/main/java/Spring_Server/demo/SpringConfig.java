@@ -1,5 +1,6 @@
 package Spring_Server.demo;
 
+import Spring_Server.demo.aop.TimeTraceAop;
 import Spring_Server.demo.repository.JdbcMemberRepository;
 import Spring_Server.demo.repository.JdbcTemplateMemberRepository;
 import Spring_Server.demo.repository.JpaMemberRepository;
@@ -22,9 +23,15 @@ public class SpringConfig {
         this.em = em;
     }
 
+
     @Bean
     public MemberService memberService() {
         return new MemberService(memberRepository());
+    }
+
+    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
     }
 
     @Bean
